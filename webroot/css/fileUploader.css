@@ -1,0 +1,63 @@
+#pxupload_form,
+#px_display,
+#px_button {
+	float: left;
+}
+.uploadData {
+	padding: 5px;
+	width: 420px;
+	background-color: #F0F8FF;
+	border: 1px solid #B0D8FF;
+	position: relative;
+}
+.uploadData .fname {
+	padding-right: 10px;
+	width: 120px;
+}
+.uploadData .loader {
+	width: 140px;
+	text-align: center;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #999999;
+}
+.uploadData.uploading {
+	background-color: #ffffff;
+
+}
+.uploadData.success {
+
+}
+.uploadData.error {
+	border: 1px solid #BF0000;
+	background-color: #ffbfbf;
+}
+.uploadData .result {
+	display: block;
+	float: left;
+	width: 130px;
+	padding-left: 10px;
+}
+.uploadData .close {
+/*	background-image: url(close.gif);*/
+	height: 16px;
+	width: 16px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
+}
+.uploadData .close:hover {
+	background-position: 16px 0px;
+}
+#px_button {
+	padding: 10px;
+}
+#px_button input {
+	margin-right: 6px;
+	padding: 5px;
+}
+
+#px_button input:disabled {
+	display: none;
+}
