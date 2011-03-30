@@ -28,11 +28,11 @@
 	
 		$fieldAttribs = $html->_initInputField($name);
 		
-		$fieldAttribs2 = $html->_initInputField($association . '.id');
+		$fieldAttribs2 = $html->_initInputField($association);
 
 	?>
 	
-	<iframe id="<?= $name ?>" class="" scrolling="no" style="height:0px;width:500px;" src="<?= $this->Html->iframeUrl(array(
+	<iframe id="<?= $name ?>" class="" frameborder="0" allowtransparency="true" scrolling="no" style="height:0px;width:500px;" src="<?= $this->Html->iframeUrl(array(
 	    'controller' => 'ClpUploads',
 	    'action' => 'add',
 	    'plugin' => 'clp_upload',
