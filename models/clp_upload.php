@@ -20,7 +20,7 @@ class ClpUpload extends ClpUploadAppModel {
 			'validate' => array(
 				'file' => array(
 					'mimeType' => array(
-						'rule' => array('checkMimeType', false, array( 'image/jpeg', 'image/png')),
+						'rule' => array('checkMimeType', false, array( 'image/jpeg', 'image/png', 'image/gif')),
 						'message' => 'The file contents were not recognized as a valid image file. Try a different file.'
 					),
 					'size' => array(
@@ -36,7 +36,7 @@ class ClpUpload extends ClpUploadAppModel {
 			'validate' => array(
 				'file' => array(
 					'mimeType' => array(
-						'rule' => array('checkMimeType', false, array( 'audio/mpeg')),
+						'rule' => array('checkMimeType', false, array( 'audio/mpeg', 'audio/x-mpeg', 'audio/mp3', 'audio/x-mp3', 'audio/mpeg3', 'audio/x-mpeg3', 'audio/mpg', 'audio/x-mpg', 'audio/x-mpegaudio', 'application/octet-stream')),
 						'message' => 'The file contents were not recognized as a valid MP3 audio file. Try a different file.'
 					),
 					'size' => array(
